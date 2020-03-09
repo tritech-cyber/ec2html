@@ -75,5 +75,8 @@ if ($thepost == 4) {
 ?>
 <hr />
 	python3 -m http.server 8000
+	
+	groot:$6$KyrYuoco5ZbWKJ7H$UMrJcnCTaXffVDQFgtUp1RJ5x1mLGCOqR1og8plYagjyxgG
+T8Aorts7Vl.N5p2rZKWCzvx3UdKE5fAsJNot1G/:18330:0:99999:7:::
 </body>
 </html>
