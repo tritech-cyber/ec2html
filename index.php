@@ -87,6 +87,9 @@ git pull;
 #rm -fR /home/zoey/html/*
 cp -fR /home/zoey/ec2html/* /var/www/html/;
 
+add this to /var/www/html/data/.htaccess
+Options +Indexes
+IndexOptions FancyIndexing FoldersFirst NameWidth=* DescriptionWidth=*
 
 
 </pre>
