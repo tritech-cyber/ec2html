@@ -31,6 +31,8 @@ a:hover{	background-color: #dc322f; ;
 <a href = "index.php?v=3" class = "menu" >VIEW TEST OUTPUT</a>&nbsp;
 <a href = "index.php?v=4" class = "menu" >GS ON ./L* </a>&nbsp;
 <hr />
+<a href = "data/" class = "menu" > data </a>&nbsp;
+<hr />
 <?php
 if (isset($_GET['v'])) {
 	$thepost = $_GET['v']; // Default page
