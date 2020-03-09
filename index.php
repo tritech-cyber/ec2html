@@ -1,4 +1,4 @@
 <?php
 phpinfo();
 ?>
-HOME DE CARBON
+HOMBE DE CARBON
