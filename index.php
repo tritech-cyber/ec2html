@@ -8,26 +8,20 @@ pre{
   border: solid 1px; border-radius: 20px; padding : 10px;
 }
 
-a{
-	background-color:#cb4b16; ;
+a{ 	background-color:#cb4b16; ;
 	color: #fff;
 	font-size:20px;
 	text-decoration:none;
 	border: solid 1px;
-border-radius: 5px;
-padding : 2px;
+	border-radius: 5px;
+	padding : 2px;
 	
 }
 
-a:hover{
-	background-color: #dc322f; ;
-	color:  #fdf6e3; ;
-	text-decoration:none;
-	
-	
+a:hover{	background-color: #dc322f; ;
+		color:  #fdf6e3; ;
+		text-decoration:none;
 }
-
-
 </style>
 <body>
 <center>
@@ -78,12 +72,7 @@ if ($thepost == 4) {
         echo "<pre>$output</pre>";
 }
 
-
-
-
 ?>
-
 <hr />
-
 </body>
 </html>
