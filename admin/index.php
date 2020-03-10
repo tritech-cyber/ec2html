@@ -4,11 +4,11 @@ body{font-family: system-ui, sans-serif;}
 html{font-family: system-ui, sans-serif;}
   
 pre{ 
-  background-color: #ddd; color: #000;
+  background-color: #fdf6e3;color: #b58900;
   border: solid 1px; border-radius: 20px; padding : 10px;
 }
 
-a{ 	background-color:#ff0000 ;
+a{ 	background-color:#cb4b16; ;
 	color: #fff;
 	font-size:20px;
 	text-decoration:none;
@@ -25,10 +25,9 @@ a:hover{	background-color: #dc322f; ;
 </style>
 <body>
 <center>
-<a href = "https://www.tcpdump.org/" >tcpdump.org</a>&nbsp; 
-<a href = "https://www.redhat.com"  >REDHAT</a>&nbsp; 
-<a href = "https://www.centos.org/"  >CENTOS </a>&nbsp;
-<a href = "https://getfedora.org/"  >FEDORA </a>&nbsp;
+<a href = "index.php?v=0" class = "menu" >ps http:8000</a>&nbsp; 
+<a href = "index.php?v=1" class = "menu" >CHECK PS</a>&nbsp; 
+<a href = "index.php?v=2" class = "menu" >stop ps http:8000 </a>&nbsp;
 
 <hr />
 <a href = "admin/" class = "menu" > ADMINISTRATION </a>&nbsp;
