@@ -29,9 +29,13 @@ a:hover{	background-color: #dc322f; ;
 <a href = "https://www.redhat.com"  >REDHAT</a>&nbsp; 
 <a href = "https://www.centos.org/"  >CENTOS </a>&nbsp;
 <a href = "https://getfedora.org/"  >FEDORA </a>&nbsp;
+<hr />
+<a href = "files/"  >files </a>&nbsp;
+<a href = "data/"  >data </a>&nbsp;
 
 <hr />
-<a href = "admin/" class = "menu" > ADMINISTRATION </a>&nbsp;
+<a href = "admin/"  > ADMINISTRATION </a>&nbsp;
+
 <hr />
 <?php
 if (isset($_GET['v'])) {
