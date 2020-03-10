@@ -26,10 +26,15 @@ a:hover{	background-color: #dc322f; ;
 <body>
 <center>
 <a href = "data/" >data</a>&nbsp; 
+<a href = "files/" >files</a>&nbsp; 
 </center>
 <hr />
 <pre>
-	python3 -m http.server 8000
+
+Save AWS security rules in the files directory.
+Save tcpdump files in the data directory. 
+
+python3 -m http.server 8000
 	
 	groot:$6$KyrYuoco5ZbWKJ7H$UMrJcnCTaXffVDQFgtUp1RJ5x1mLGCOqR1og8plYagjyxgG
 T8Aorts7Vl.N5p2rZKWCzvx3UdKE5fAsJNot1G/:18330:0:99999:7:::
@@ -44,6 +49,8 @@ cp -fR /home/zoey/ec2html/* /var/www/html/;
 add this to /var/www/html/data/.htaccess
 Options +Indexes
 IndexOptions FancyIndexing FoldersFirst NameWidth=* DescriptionWidth=*
+
+
 
 
 </pre>
