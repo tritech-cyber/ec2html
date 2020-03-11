@@ -1,15 +1,27 @@
-<html><head><title>tritech.io</title></head>
+<html><head><title>admin</title></head>
 <style>
 body{font-family: system-ui, sans-serif;}
 html{font-family: system-ui, sans-serif;}
   
 pre{ 
-  background-color: #fdf6e3;color: #b58900;
-  border: solid 1px; border-radius: 20px; padding : 10px;
+  font-family: system-ui, sans-serif;
+  font-weight: bold;
+  background-color: #000;color: #ffffff;
+  border: solid 3px; border-color: red; border-radius: 20px; padding : 10px;
+  
 }
 
-a{ 	background-color:#cb4b16; ;
-	color: #fff;
+a.white{
+	background-color:#ffffff ;
+	border: none;
+}
+a.white:hover{
+	background-color:#ffffff ;
+}
+
+
+a{ 	background-color:#ffffff ;
+	color: #f00;
 	font-size:20px;
 	text-decoration:none;
 	border: solid 1px;
@@ -18,20 +30,20 @@ a{ 	background-color:#cb4b16; ;
 	
 }
 
-a:hover{	background-color: #dc322f; ;
-		color:  #fdf6e3; ;
+a:hover{	background-color: #ddd ;
+		color:  #000; ;
 		text-decoration:none;
 }
 </style>
 <body>
 <center>
+ADMINISTRATION
+<a href = "localhost" class= "white" ><img src = "home.png" height = "50px" </a>
 <a href = "index.php?v=0" class = "menu" >ps http:8000</a>&nbsp; 
 <a href = "index.php?v=1" class = "menu" >CHECK PS</a>&nbsp; 
 <a href = "index.php?v=2" class = "menu" >stop ps http:8000 </a>&nbsp;
+<hr />
 
-<hr />
-<a href = "admin/" class = "menu" > ADMINISTRATION </a>&nbsp;
-<hr />
 <?php
 if (isset($_GET['v'])) {
 	$thepost = $_GET['v']; // Default page
