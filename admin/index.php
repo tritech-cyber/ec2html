@@ -39,9 +39,10 @@ a:hover{	background-color: #ddd ;
 <center>
 ADMINISTRATION
 <a href = "localhost" class= "white" ><img src = "home.png" height = "50px" </a>
-<a href = "index.php?v=0" class = "menu" >ps http:8000</a>&nbsp; 
-<a href = "index.php?v=1" class = "menu" >CHECK PS</a>&nbsp; 
-<a href = "index.php?v=2" class = "menu" >stop ps http:8000 </a>&nbsp;
+<a href = "index.php?v=0" class = "menu" >python 3.7* http:8000</a>&nbsp; 
+<a href = "index.php?v=1" class = "menu" >python 3.6* http:8000</a>&nbsp;
+<a href = "index.php?v=2" class = "menu" >CHECK PS</a>&nbsp; 
+<a href = "index.php?v=3" class = "menu" >stop ps http:8000 </a>&nbsp;
 <hr />
 
 <?php
@@ -61,18 +62,26 @@ if ($thepost == 0) {
 	 echo "OUTPUT";
 	echo "<pre>$output</pre>";
 }
+
 if ($thepost == 1) {
+        $output = shell_exec('cd web; nohup python3 -m http.server 8000  >> /dev/null 2>&1 &');
+         echo "OUTPUT";
+        echo "<pre>$output</pre>";
+}
+
+
+if ($thepost == 2) {
 	$output = shell_exec('ps');
 	 echo "OUTPUT";
 	echo "<pre>$output</pre>";
 }
-if ($thepost == 2) {
+if ($thepost == 3) {
         $output = shell_exec('pkill  python3');
 	 echo "OUTPUT";
         echo "<pre>$output</pre>";
 }
 
-if ($thepost == 3) {
+if ($thepost == 4) {
         $output = shell_exec('cat DataOutput.txt');
          echo "OUTPUT";
         echo "<pre>$output</pre>";
