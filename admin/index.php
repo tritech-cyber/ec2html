@@ -38,13 +38,20 @@ a:hover{	background-color: #ddd ;
 <body>
 <center>
 ADMINISTRATION
-<a href = "localhost" class= "white" ><img src = "home.png" height = "50px" </a>
+<a href = "http://tritech.io" class= "white" ><img src = "home.png" height = "50px" </a>
 <a href = "index.php?v=0" class = "menu" >python 3.7* http:8000</a>&nbsp; 
 <a href = "index.php?v=1" class = "menu" >python 3.6* http:8000</a>&nbsp;
 <a href = "index.php?v=2" class = "menu" >CHECK PS</a>&nbsp; 
 <a href = "index.php?v=3" class = "menu" >stop ps http:8000 </a>&nbsp;
+<a href = "index.php?v=4" class = "menu" > start tcpdump </a>&nbsp;
+<a href = "index.php?v=5" class = "menu" > stop tcpdump </a>&nbsp;
 <hr />
-
+<?php 
+echo date('m/d/Y H:i:s', time()); 
+$filename = date('mdY-His', time());
+echo " Filename: $filename" ;
+?> 
+<hr />
 <?php
 if (isset($_GET['v'])) {
 	$thepost = $_GET['v']; // Default page
@@ -82,12 +89,15 @@ if ($thepost == 3) {
 }
 
 if ($thepost == 4) {
-        $output = shell_exec('cat DataOutput.txt');
+	//      tcpdump -w 200306-0937.pcap -i eth0 
+		$tcpdump = "nohup  tcpdump -w ".$filename."pcap -i eno1 >> /dev/null 2>&1 &" ;
+		echo "tcpdump string =$tcpdump";
+        $output = shell_exec($tcpdump);
          echo "OUTPUT";
         echo "<pre>$output</pre>";
 }
 
-if ($thepost == 4) {
+if ($thepost == 5) {
         $output = shell_exec('./LinuxTestBuildV1_51.x86_64');
 			//     ./LinuxTestBuildV1_32.x86_64
          echo "OUTPUT";
