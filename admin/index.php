@@ -117,7 +117,7 @@ if ($thepost == 5) {
 }
 
 if ($thepost == 6) {
-        $command = '/home/cwc/http/ec2html/admin/getec2html.sh';
+        $command = '/var/www/html/admin/getec2html.sh';
         $output = shell_exec($command);
         echo "<pre>OUTPUT";
         echo "$output";
