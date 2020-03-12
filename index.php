@@ -83,6 +83,8 @@ if ($thepost == 4) {
 
 ?>
 <hr />
+
+<?php include "nav.html" ?>
 <pre>
 	python3 -m http.server 8000
 	
