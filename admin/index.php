@@ -45,7 +45,8 @@ ADMINISTRATION
 <a href = "index.php?v=3" class = "menu" >stop ps http:8000 </a>&nbsp;
 <a href = "index.php?v=4" class = "menu" > start tcpdump </a>&nbsp;
 <a href = "index.php?v=5" class = "menu" > stop tcpdump </a>&nbsp;
-<a href = "index.php?v=6" class = "menu" > ls -l </a>&nbsp;
+<a href = "index.php?v=6" class = "menu" >html update</a>&nbsp;
+<a href = "index.php?v=7" class = "menu" > ls -l </a>&nbsp;
 <hr />
 <?php 
 echo date('m/d/Y H:i:s', time()); 
@@ -116,6 +117,15 @@ if ($thepost == 5) {
 }
 
 if ($thepost == 6) {
+        $command = '/home/cwc/http/ec2html/admin/getec2html.sh';
+        $output = shell_exec($command);
+        echo "<pre>OUTPUT";
+        echo "$output";
+        echo"</pre>";
+}
+
+
+if ($thepost == 7) {
 	$ls = "ls -l;date;";
 	$output = shell_exec($ls);
 	echo "<pre>OUTPUT";
