@@ -109,9 +109,9 @@ if ($thepost == 4) {
 
 if ($thepost == 5) {
       $output = shell_exec('/home/cwc/http/ec2html/admin/tcpdmp.sh');
-      //print_r($output);
+      print_r($output);
       echo "<pre>OUTPUT";
-	echo "$output";
+	//echo "$output";
 	echo"</pre>";
 }
 
