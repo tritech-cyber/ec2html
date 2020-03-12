@@ -37,7 +37,7 @@ a:hover{	background-color: #dc322f; ;
 <a href = "localhost" class= "white" ><img src = "home.png" height = "50px" </a>
 <a href = "files/"  >files </a>&nbsp;
 <a href = "data/"  >data </a>&nbsp;
-<a href = "http://192.168.1.7:8000" target = "_blank"> *:8000</a>
+<a href = "http://tritech.io:8000" target = "_blank"> *:8000</a>
 <a href = "admin/"  > ADMINISTRATION </a>&nbsp;
 <hr />
 <?php
